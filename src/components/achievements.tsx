@@ -1,6 +1,4 @@
 import { useState } from "react";
-import hiFlyerAward from "@/assets/hi-flyer-award.jpg.asset.json";
-import spotAward from "@/assets/spot-award.png.asset.json";
 
 type Achievement = {
   title: string;
@@ -9,8 +7,8 @@ type Achievement = {
 };
 
 const achievements: Achievement[] = [
-  { title: "Hi-Flyer Award Winner", context: "@ Movate", image: hiFlyerAward.url },
-  { title: "Spot Award Winner", context: "@ Movate", image: spotAward.url },
+  { title: "Hi-Flyer Award Winner", context: "@ Movate", image: "/hi-flyer-award.jpg" },
+  { title: "Spot Award Winner", context: "@ Movate", image: "/spot-award.png" },
 ];
 
 export function Achievements() {

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import awsBadge from "@/assets/aws-saa.png.asset.json";
-import azureBadge from "@/assets/azure-fundamentals.png.asset.json";
 
 type Certification = {
   name: string;
@@ -14,14 +12,14 @@ const certifications: Certification[] = [
     name: "AWS Certified Solutions Architect – Associate",
     description: "Designing scalable, cost-optimized, and secure AWS architectures.",
     link: "https://www.credly.com/badges/a31c03f4-91e4-4673-a87a-ceea689cd783",
-    image: awsBadge.url,
+    image: "/aws-saa.png",
   },
   {
     name: "Microsoft Certified: Azure Fundamentals",
     description:
       "Core cloud concepts, Azure services, and foundational cloud knowledge.",
     link: "https://learn.microsoft.com/en-us/users/mdomerfarooq-4351/credentials/3b6c19526e7a1f05",
-    image: azureBadge.url,
+    image: "/azure-fundamentals.png",
   },
 ];
 
