@@ -39,8 +39,7 @@ export function useScrollFocus(count: number) {
       let bestDist = Infinity;
       nodes.forEach((node) => {
         const rect = node.getBoundingClientRect();
-        const visible =
-          Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+        const visible = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
         // For elements taller than the viewport, measure visibility against the
         // viewport instead so they can still qualify.
         const reference = Math.min(rect.height, window.innerHeight);

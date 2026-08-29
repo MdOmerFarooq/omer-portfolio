@@ -98,8 +98,7 @@ export function FramePlayer({
   const isMobile = useIsMobile();
   const displaySize = isMobile ? 200 : Math.min(size, 300);
 
-  const staticSrc =
-    state === "neutral" || state === "wave" ? NEUTRAL_FRAME : framePaths(state)[0];
+  const staticSrc = state === "neutral" || state === "wave" ? NEUTRAL_FRAME : framePaths(state)[0];
 
   // Preload every frame before playback.
   useEffect(() => {
@@ -202,8 +201,7 @@ export function FramePlayer({
 
   const showCanvas = !reducedMotion && state !== "neutral";
 
-  const mask =
-    "radial-gradient(ellipse 95% 95% at center, black 80%, transparent 100%)";
+  const mask = "radial-gradient(ellipse 95% 95% at center, black 80%, transparent 100%)";
 
   return (
     <div

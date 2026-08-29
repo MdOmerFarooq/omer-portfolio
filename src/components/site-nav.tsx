@@ -59,30 +59,30 @@ export function SiteNav() {
 
   return (
     <>
-    <div ref={sentinelRef} aria-hidden className="absolute top-2 left-0 h-px w-px" />
-    <header
-      className={`fixed inset-x-0 top-0 z-50 bg-background transition-shadow ${
-        scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,0.06)]" : "shadow-none"
-      }`}
-    >
-      <nav className="mx-auto flex max-w-6xl items-center justify-end px-6 py-5">
-        <div className="hidden items-center gap-7 md:flex">{items}</div>
-        <button
-          type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          className="md:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
-      </nav>
-      {open && (
-        <div className="flex flex-col gap-4 border-t border-border px-6 py-5 md:hidden">
-          {items}
-        </div>
-      )}
-    </header>
+      <div ref={sentinelRef} aria-hidden className="absolute top-2 left-0 h-px w-px" />
+      <header
+        className={`fixed inset-x-0 top-0 z-50 bg-background transition-shadow ${
+          scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,0.06)]" : "shadow-none"
+        }`}
+      >
+        <nav className="mx-auto flex max-w-6xl items-center justify-end px-6 py-5">
+          <div className="hidden items-center gap-7 md:flex">{items}</div>
+          <button
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            className="md:hidden"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </nav>
+        {open && (
+          <div className="flex flex-col gap-4 border-t border-border px-6 py-5 md:hidden">
+            {items}
+          </div>
+        )}
+      </header>
     </>
   );
 }
