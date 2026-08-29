@@ -16,8 +16,7 @@ const certifications: Certification[] = [
   },
   {
     name: "Microsoft Certified: Azure Fundamentals",
-    description:
-      "Core cloud concepts, Azure services, and foundational cloud knowledge.",
+    description: "Core cloud concepts, Azure services, and foundational cloud knowledge.",
     link: "https://learn.microsoft.com/en-us/users/mdomerfarooq-4351/credentials/3b6c19526e7a1f05",
     image: "/azure-fundamentals.png",
   },
@@ -55,9 +54,7 @@ export function Certifications() {
             )}
 
             <h3 className="mt-6 text-base font-medium text-foreground">{cert.name}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {cert.description}
-            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cert.description}</p>
 
             <a
               href={cert.link}

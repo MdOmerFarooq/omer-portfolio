@@ -54,48 +54,40 @@ function About() {
 
       <main className="mx-auto max-w-4xl px-6 pt-36 pb-24">
         <Reveal>
-          <h1 className="font-serif text-5xl font-bold text-foreground sm:text-6xl">
-            A bit more
-          </h1>
+          <h1 className="font-serif text-5xl font-bold text-foreground sm:text-6xl">A bit more</h1>
 
           <div className="mt-14 flex justify-center md:justify-start">
-            <FramePlayer
-              state="conversation"
-              size={400}
-              alt="Illustration closing a laptop"
-            />
+            <FramePlayer state="conversation" size={400} alt="Illustration closing a laptop" />
           </div>
 
           <div className="mt-14 max-w-2xl space-y-6 text-sm leading-relaxed text-muted-foreground">
             <p>
               I didn't start out calling myself a Cloud or DevOps Engineer. I started with
-              Electronics and Communication Engineering, completing my diploma in 2020 and
-              my Bachelor's degree in Engineering in 2023 at Lords Institute of Engineering
-              and Technology in Hyderabad. Somewhere along the way, I found myself more
-              interested in what happens behind the application — the machines, networks,
-              deployments and systems that have to keep everything running.
+              Electronics and Communication Engineering, completing my diploma in 2020 and my
+              Bachelor's degree in Engineering in 2023 at Lords Institute of Engineering and
+              Technology in Hyderabad. Somewhere along the way, I found myself more interested in
+              what happens behind the application — the machines, networks, deployments and systems
+              that have to keep everything running.
             </p>
             <p>
-              I joined Movate Technologies in 2023 as an Engineer, working across Linux,
-              Windows and macOS environments, along with monitoring, incident response,
-              access management and operational automation. Over time, that work moved
-              deeper into cloud infrastructure and automation, and I grew into a Senior
-              Engineer role where I worked with infrastructure provisioning, configuration
-              management, containerized environments and CI/CD automation across cloud
-              platforms.
+              I joined Movate Technologies in 2023 as an Engineer, working across Linux, Windows and
+              macOS environments, along with monitoring, incident response, access management and
+              operational automation. Over time, that work moved deeper into cloud infrastructure
+              and automation, and I grew into a Senior Engineer role where I worked with
+              infrastructure provisioning, configuration management, containerized environments and
+              CI/CD automation across cloud platforms.
             </p>
             <p>
-              These days, the part of engineering I enjoy most is turning something that is
-              manual, fragile or difficult to operate into something predictable. Whether
-              that's a deployment pipeline, a rolling patch process, a cloud architecture or
-              an incident that needs debugging, I like understanding what is actually
-              happening underneath and then finding a better way to build, operate and scale
-              it.
+              These days, the part of engineering I enjoy most is turning something that is manual,
+              fragile or difficult to operate into something predictable. Whether that's a
+              deployment pipeline, a rolling patch process, a cloud architecture or an incident that
+              needs debugging, I like understanding what is actually happening underneath and then
+              finding a better way to build, operate and scale it.
             </p>
             <p>
-              Outside of work, I spend time with friends and family, build side projects
-              that start with "this should be easy," and then quietly turn into weekend-long
-              debugging sessions.
+              Outside of work, I spend time with friends and family, build side projects that start
+              with "this should be easy," and then quietly turn into weekend-long debugging
+              sessions.
             </p>
           </div>
 
@@ -131,9 +123,7 @@ function About() {
 
         <Reveal as="section" id="achievements" className="scroll-mt-24 pt-24">
           <p className="eyebrow">achievements</p>
-          <h2 className="mt-4 font-serif text-4xl text-foreground sm:text-5xl">
-            Recognitions
-          </h2>
+          <h2 className="mt-4 font-serif text-4xl text-foreground sm:text-5xl">Recognitions</h2>
           <Achievements />
         </Reveal>
       </main>

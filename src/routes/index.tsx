@@ -54,10 +54,10 @@ function Index() {
                 I build and automate infrastructure that teams can rely on.
               </p>
               <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                I'm a Cloud &amp; DevOps Engineer with nearly 3 years of experience working
-                across infrastructure, automation, and systems engineering. I build cloud
-                environments, automate deployments and operations, and spend a lot of time
-                making systems easier to run, troubleshoot, and scale.
+                I'm a Cloud &amp; DevOps Engineer with nearly 3 years of experience working across
+                infrastructure, automation, and systems engineering. I build cloud environments,
+                automate deployments and operations, and spend a lot of time making systems easier
+                to run, troubleshoot, and scale.
               </p>
             </div>
             <div className="flex justify-center md:translate-x-[-48px] md:justify-end">
@@ -117,9 +117,7 @@ function Index() {
         {/* CERTIFICATIONS */}
         <Reveal as="section" id="certifications" className="scroll-mt-24 py-24">
           <p className="eyebrow">certifications</p>
-          <h2 className="mt-4 font-serif text-4xl text-foreground sm:text-5xl">
-            Credentials
-          </h2>
+          <h2 className="mt-4 font-serif text-4xl text-foreground sm:text-5xl">Credentials</h2>
           <Certifications />
         </Reveal>
       </main>

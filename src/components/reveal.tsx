@@ -33,11 +33,7 @@ export function Reveal({
   }, []);
 
   return (
-    <Tag
-      id={id}
-      ref={ref as never}
-      className={`reveal ${shown ? "reveal-in" : ""} ${className}`}
-    >
+    <Tag id={id} ref={ref as never} className={`reveal ${shown ? "reveal-in" : ""} ${className}`}>
       {children}
     </Tag>
   );
